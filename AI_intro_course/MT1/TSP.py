@@ -103,4 +103,3 @@ for i in range(0, noOfGenerations):
         rankedPopulation.append(rankedCromosome)
     rankedPopulation = sorted(rankedPopulation, key = lambda d: d['distance'], reverse=False)
     progress.append(rankedPopulation[0])
-    
