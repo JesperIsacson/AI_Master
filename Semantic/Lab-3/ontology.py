@@ -81,6 +81,6 @@ with onto:
     rule = Imp()
     rule.set_name("Staphylococcus_Check")
     #Formulate the rule to check if a bacterium is a staphylococcus
-    rule.set_as_rule("""Bacterium(?d), has_shape(?d, "?Round"), has_grouping(?d, "?InCluster"), gram_positive(?d, ?True) -> Bacterium(?d, ?Staphylococcus)""")
+    rule.set_as_rule("""Bacterium(?d), has_shape(?d, ?Round), has_grouping(?d, ?InCluster), gram_positive(?d, ?True) -> Bacterium(?d, ?Staphylococcus)""")
     sync_reasoner()
     print(onto.unknown_bacterium.__class__)
